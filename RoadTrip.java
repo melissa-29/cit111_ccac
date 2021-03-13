@@ -7,7 +7,7 @@ package chunk1_mod3and4;
 
 /**
  *
- * @author mweis
+ * @author melissa-29
  */
 public class RoadTrip {
     public static void main(String[] args){

@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author mweis
+ * @author melissa-29
  */
 public class MathQuiz {
     public static void main(String[] args){

@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author mweis
+ * @author melissa-29
  */
 public class MysteryDoor {
     public static void main(String[] args){
@@ -24,7 +24,7 @@ public class MysteryDoor {
         System.out.println("Enter the ONE DOOR number you'd like to open-- 1, 2, or 3:");
         int door = scan.nextInt();
         
-        
+        // this locates each method that pertains to each of the three doors
         switch(door){
             case 1:
                 generateRandomNumber();
@@ -43,6 +43,10 @@ public class MysteryDoor {
         
     } // close main method
     
+    /*
+    this method generates a random number that will provide the number of
+    candies that will be the prize for Door #1
+    */
     public static void generateRandomNumber(){
         System.out.println("You chose Door #1");
         Random randomGenerator = new Random();
@@ -51,6 +55,11 @@ public class MysteryDoor {
     
     }// close generateRanomNumber;
     
+    /*
+    this method will ask the user two questions. Then, the answers will be multiplied
+    which will be the prize for Door #2
+    this method also calls upon parameters within the switch code!
+    */
     public static void answerTheQuestions(int emmys, int age){
         System.out.println("You chose Door #2");
         Scanner scan = new Scanner(System.in);
@@ -72,7 +81,10 @@ public class MysteryDoor {
         }          
     }// close answerTheQuestions
     
-    
+    /*
+    this is the sore door, that offers no prize, but the user is able to see what
+    they could have won from Door #1.
+    */
     public static void soreDoor(){
         System.out.println("Oh no, you picked the sore door! You don't get any of the special More prizes, and instead you're surely sore.");
         System.out.println("But not to worry, you can still see what you could have won to make it that much worse!");
